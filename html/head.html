@@ -184,8 +184,8 @@
             const home = document.querySelector(".home")
             const homeHeight = home.offsetHeight - 56;
             header.classList.toggle('sticky', window.scrollY >0);
-            header.classList.toggle('color_change', scrollY > homeHeight);
-            });
+            header.classList.toggle('color_change', window.scrollY > homeHeight);
+        });
 
         const menuBtn = document.querySelector('.nav_menu_btn')
         const closeBtn = document.querySelector('.nav_close_btn')
